@@ -4,7 +4,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install -y blender
 
-WORKDIR /var/tn
-COPY tn.py tn.py
+COPY tn.py /var/tn/tn.py
+WORKDIR /var/tn/data
 
-ENTRYPOINT ["blender", "--background", "--python", "/var/tn/tn.py", "--"]
+
+ENTRYPOINT ["blender", "--background", "--python", "../tn.py", "--"]

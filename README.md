@@ -7,7 +7,7 @@
 From the directory containing your OBJ file `Big.obj`:
 
 ```bash
-docker run -v="$(pwd):/var/tn" -u="$(id -u):$(id -g)" memowe/thumbnailify:0.0.1 Big.obj --percent 5
+docker run -v="$(pwd):/var/tn/data" -u="$(id -u):$(id -g)" memowe/thumbnailify:0.0.1 Big.obj --percent 5
 ```
 
 This will write new OBJ data as `Big_thumbnail.obj`.
