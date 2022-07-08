@@ -25,6 +25,6 @@ This tool is in early [development][repo]. Please submit issues and feature requ
 Released under the MIT license, see [LICENSE][license] for details.
 
 [decmod]: https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/decimate.html
-[repo]: https://zivgitlab.uni-muenster.de/memowe/mesh-thumbnailify
-[issues]: https://zivgitlab.uni-muenster.de/memowe/mesh-thumbnailify/-/issues
+[repo]: https://zivgitlab.uni-muenster.de/SCDH/ag-3d/mesh-thumbnailify
+[issues]: https://zivgitlab.uni-muenster.de/SCDH/ag-3d/mesh-thumbnailify/-/issues
 [license]: LICENSE
