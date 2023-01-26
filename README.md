@@ -20,7 +20,7 @@ This tool is in early [development][repo]. Please submit issues and feature requ
 
 ## Copyright and License
 
-(c) 2022 Mirko Westermeier, Service Center for Digital Humanities
+(c) 2022-2023 Mirko Westermeier, Service Center for Digital Humanities
 
 Released under the MIT license, see [LICENSE][license] for details.
 
