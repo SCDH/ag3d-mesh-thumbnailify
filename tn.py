@@ -14,6 +14,7 @@ def die(*args, **kwargs):
 
 arg_parser = argparse.ArgumentParser() # TODO customize
 arg_parser.add_argument('--percent', type=int, default=10)
+arg_parser.add_argument('--obj', action='store_true')
 arg_parser.add_argument('obj_filename')
 pyargs  = list(dropwhile(lambda arg: arg != '--', sys.argv))[1:]
 args    = arg_parser.parse_args(pyargs)
@@ -56,7 +57,18 @@ bpy.context.object.modifiers['Decimate'].ratio = args.percent / 100
 bpy.ops.object.modifier_apply(modifier='Decimate')
 print('... Done.')
 
-# Export result
-export_filename = f'{obj_purename}_thumbnail.obj'
-print(f'Exporting to {export_filename}.')
-bpy.ops.export_scene.obj(filepath=export_filename)
+### Export result ###
+
+export_filename = f'{obj_purename}_thumbnail.'
+
+# GLB (default)
+if (not args.obj):
+    export_filename += 'glb'
+    print(f'Exporting to {export_filename}.')
+    bpy.ops.export_scene.gltf(filepath=export_filename)
+
+# OBJ
+else:
+    export_filename += 'obj'
+    print(f'Exporting to {export_filename}.')
+    bpy.ops.export_scene.obj(filepath=export_filename)

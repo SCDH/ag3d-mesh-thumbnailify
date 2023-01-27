@@ -1,0 +1,7 @@
+0.0.2 2022-01-27
+  - Default GLB export
+  - Optional OBJ export
+
+0.0.1 2022-07-08
+  - First version
+  - Default OBJ export
