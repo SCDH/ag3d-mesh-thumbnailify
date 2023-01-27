@@ -10,9 +10,9 @@ From the directory containing your OBJ file `Big.obj`:
 docker run -v="$(pwd):/var/tn/data" -u="$(id -u):$(id -g)" memowe/thumbnailify:0.0.1 Big.obj --percent 5
 ```
 
-This will write new OBJ data as `Big_thumbnail.obj`.
+This will write new GLB data as `Big_thumbnail.glb`.
 
-The optional `--percent` argument defines in percent, which *collapse ratio* of the Blender [Decimate Modifier][decmod] should be used. Default is 10.
+The optional `--percent 42` argument defines in percent, which *collapse ratio* of the Blender [Decimate Modifier][decmod] should be used. Default is 10. If you prefer OBJ output, use the optional `--obj` argument.
 
 ## Early development
 
