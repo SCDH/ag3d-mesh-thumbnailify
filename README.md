@@ -7,7 +7,7 @@
 From the directory containing your OBJ file `Big.obj`:
 
 ```bash
-docker run -v="$(pwd):/var/tn/data" -u="$(id -u):$(id -g)" memowe/thumbnailify:0.0.1 Big.obj --percent 5
+docker run -v="$(pwd):/var/tn/data" -u="$(id -u):$(id -g)" memowe/thumbnailify:0.0.2 Big.obj --percent 5
 ```
 
 This will write new GLB data as `Big_thumbnail.glb`.
